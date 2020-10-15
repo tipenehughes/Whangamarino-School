@@ -46,4 +46,5 @@ var flkty = new Flickity(elem, {
     autoPlay: 5000,
     pauseAutoPlayOnHover: false,
     fade: true,
+    imagesLoaded: true,
 });

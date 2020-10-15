@@ -217,12 +217,12 @@ body {
 
 .main-carousel {
     width: 100%;
-    height: 80vh;
+    max-height: 70vh;
 }
 
 .carousel-cell {
     width: 100%;
-    height: 100%;
+    max-height: 70vh;
     margin-right: 10px;
 }
 
@@ -458,7 +458,7 @@ body {
 /* Footer */
 
 .footer {
-    height: 45vh;
+    min-height: 45vh;
 }
 
 .footer span:first-of-type {
@@ -523,4 +523,143 @@ body {
     background-color: var(--main-red);
     text-align: center;
     color: #fff;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1024px) {
+    .home-school-name span:first-child {
+        font-size: 1rem;
+        line-height: 0.4;
+        transition: all 0.2s ease;
+    }
+
+    .home-school-name span:last-child {
+        font-size: 2.6rem;
+        transition: all 0.2s ease;
+    }
+
+    .home-logo {
+        display: inline-block;
+        height: 75%;
+        transition: all 0.2s ease;
+    }
+    .main-carousel {
+        max-height: 50vh;
+    }
+    .carousel-cell {
+        max-height: 50vh;
+    }
+    .footer-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 1rem;
+        height: 100%;
+        width: 80%;
+    }
+    .footer-items:first-child li {
+        text-align: center;
+    }
+    .footer-items:nth-child(2) {
+        margin: 0px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        min-height: 12vh;
+    }
+    .home-logo {
+        position: absolute;
+        height: 55%;
+    }
+    .page-break {
+        min-height: 10vh;
+    }
+    .main-carousel {
+        max-height: 50vh;
+    }
+    .carousel-cell {
+        max-height: 50vh;
+    }
+    .values-pagebreak div {
+        font-size: 0.8rem;
+        font-weight: 600;
+        flex: 1 1 33%;
+    }
+
+    .values-pagebreak div img {
+        height: 50px;
+        width: 55px;
+    }
+    .footer-items:nth-child(2) {
+        display: none;
+    }
+    .footer-content {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-items {
+        flex-direction: column;
+        height: 100%;
+    }
+    .footer-items:first-child li {
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        min-height: 30vh;
+    }
+    .navigation {
+        display: none;
+    }
+    .home-school-name {
+        font-size: 0.8rem;
+        margin-top: 1.5rem;
+    }
+    .home-school-name h1 span:first-child {
+        display: none;
+    }
+    .header {
+        display: flex;
+        flex-direction: row;
+    }
+    .home-logo {
+        position: absolute;
+        height: 40%;
+        top: 2px;
+        left: 2px;
+    }
+    .pepeha h3 {
+        font-size: 1.3rem;
+    }
+    .pepeha p {
+        line-height: 2;
+        font-size: 0.8rem;
+    }
+    .latest-news h3 {
+        font-size: 1.3rem;
+    }
+    .latest-news h4 {
+        font-size: 1rem;
+    }
+    .latest-news p {
+        font-size: 0.8rem;
+    }
 }
