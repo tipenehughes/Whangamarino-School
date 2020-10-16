@@ -1,0 +1,55 @@
+.staff-button-flex-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.staff-button {
+  flex: 1 1 33%;
+  background-color: var(--card-background);
+  text-align: center;
+  color: var(--card-text-main);
+  height: 4rem;
+}
+
+.staff-not-selected {
+  display: none !important;
+}
+
+.staff-button h4 {
+  line-height: 4rem;
+  font-weight: 600;
+  font-size: 1rem;
+  pointer-events: none;
+}
+
+.is-selected {
+  border-bottom: 3px solid var(--main-green);
+}
+
+.staff-card-flex-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.staff-card {
+  flex: 1 1 35%;
+  height: 5.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.staff-card p:first-of-type {
+  color: var(--main-green);
+}
+
+.staff-card:nth-child(2) {
+  visibility: hidden;
+}

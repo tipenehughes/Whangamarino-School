@@ -1,0 +1,44 @@
+
+
+.values blockquote {
+    margin: -8rem 0 -4rem 0;
+    color: var(--main-green);
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.4;
+}
+
+.values blockquote:before {
+    content: open-quote;
+    display: block;
+    color: rgba(255, 0, 0, 0.301);
+    font-size: 4em;
+    top: 0.9em;
+    right: 4.5em;
+    position: relative;
+}
+
+.values blockquote:after {
+    content: close-quote;
+    display: block;
+    color: rgba(255, 0, 0, 0.301);
+    font-size: 4em;
+    top: -0.4em;
+    left: 4.2em;
+    position: relative;
+}
+
+.values-flex-container {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.values-flex-item {
+    padding: 2rem;
+    width: 50%;
+    height: auto;
+}

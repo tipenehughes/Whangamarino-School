@@ -4,6 +4,12 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./img/favicon-32x32.png"
+        />
+        <link
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
             rel="stylesheet"
         />
@@ -11,7 +17,6 @@
             src="https://kit.fontawesome.com/b0e932b144.js"
             crossorigin="anonymous"
         ></script>
-        <link rel="stylesheet" href="../style.css" />
         <link
             rel="stylesheet"
             href="https://unpkg.com/flickity@2/dist/flickity.min.css"
@@ -20,10 +25,12 @@
             rel="stylesheet"
             href="https://unpkg.com/flickity-fade@1/flickity-fade.css"
         />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/mediaQueries.css" />
         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
         <script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script>
 
-        <title>Document</title>
+        <title>Whangamarino School</title>
     </head>
     <body>
         <!-- Header -->
@@ -123,22 +130,38 @@
                 <h2>Latest News</h2>
             </section>
             <article class="container latest-news">
-                <h3>August 12th 2020</h3>
-                <h4>COVID-19</h4>
-                <br />
-                <p>
-                    We are at level 2 covid-19 from 12th August 2020. At this
-                    stage we are still allowing parents and whanau onsite but
-                    would encourage you to not enter classrooms unless you
-                    absolutely have to. If you have a mask to wear whilst
-                    picking your children up or dropping your children off at
-                    kura we would encourage it. Children may wear a mask to kura
-                    as long as they are not distracted by their use (masks are
-                    not compulsory). If you prefer to keep your tamariki at home
-                    for level 2 you are able to make this choice. Attendance is
-                    only compulsory at level 1. <br />We will keep you up to
-                    date if anything changes.
-                </p>
+                <div class="latest-news-flex-item">
+                    <h3>August 12th 2020</h3>
+                    <h4>COVID-19</h4>
+                    <br />
+                    <p>
+                        We are at level 2 covid-19 from 12th August 2020. At
+                        this stage we are still allowing parents and whanau
+                        onsite but would encourage you to not enter classrooms
+                        unless you absolutely have to. If you have a mask to
+                        wear whilst picking your children up or dropping your
+                        children off at kura we would encourage it. Children may
+                        wear a mask to kura as long as they are not distracted
+                        by their use (masks are not compulsory). If you prefer
+                        to keep your tamariki at home for level 2 you are able
+                        to make this choice. Attendance is only compulsory at
+                        level 1. <br />We will keep you up to date if anything
+                        changes.
+                    </p>
+                </div>
+                <div class="latest-news-flex-item">
+                    <div class="term-dates">
+                        <img
+                            src="./img/school-logo.png"
+                            alt="Whangamarino logo"
+                        />
+                        <h3>Term Dates</h3>
+                    </div>
+                    <p>Term 1: 3rd February - 9th April</p>
+                    <p>Term 2: 28th April - 3rd July</p>
+                    <p>Term 3: 20th July - 25th September</p>
+                    <p>Term 4: 12th October - 15th December</p>
+                </div>
             </article>
         </main>
         <footer class="footer">
